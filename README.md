@@ -11,7 +11,7 @@ Some important things must be noted, however.
 1) Rather than using the outdated Summo ARM toolchain, use gcc-arm-none-eabi, a.k.a. GNU Tools for ARM Embedded Processors, available here: https://launchpad.net/gcc-arm-embedded
    You can just download the prebuilt binaries and put them where the PDF tells you to put the Summo toolchain.
 
-2) The following edit must be made to stm_projects/Makefile.common:
+2) The following edit must be made to stm_projects/common/Makefile.common:
    Find a line in the file beginning "CFLAGS+=" and add "-I$(DEVICE)/Include" (without quotes) to the end. There are several lines beginning with that, it doesn't matter which one you append to.
 
 Now, cd into ~/stm32_projects and clone this repository in. Hopefully, it'll clone into its own stm32_systemetric folder.
